@@ -8,7 +8,7 @@ body:
       label: Module
       description: Which VTT module is this bug related to?
       options:
-        # Add your modules here
+        # Add modules here
         - archetypes
         - barbarians
         - clerics
