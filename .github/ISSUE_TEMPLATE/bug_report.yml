@@ -9,7 +9,9 @@ body:
       description: Which VTT module is this bug related to?
       options:
         # Add modules here
+        - adventures
         - archetypes
+        - alchemists
         - barbarians
         - clerics
         - feats
