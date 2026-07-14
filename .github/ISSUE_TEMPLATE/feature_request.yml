@@ -9,7 +9,9 @@ body:
       description: Which VTT module is this feature request related to?
       options:
         # Add modules here
+        - adventures
         - archetypes
+        - alchemist
         - barbarians
         - clerics
         - feats
