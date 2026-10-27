@@ -27,9 +27,16 @@ jobs:
         with:
           template-path: .github/ISSUE_TEMPLATE/bug_report.yml
 
-      - name: Set labels based on severity field
+      - name: Set module labels
         uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
           section: module
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Set type labels
+        uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
+        with:
+          issue-form: ${{ steps.issue-parser.outputs.jsonString }}
+          section: package
           token: ${{ secrets.GITHUB_TOKEN }}
