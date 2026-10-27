@@ -3,6 +3,16 @@ description: Suggest an idea for this project
 labels: ["enhancement"]
 body:
   - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      description: Is this a Foundry VTT or Pathbuilder bug?
+      options:
+        - foundry-vtt
+        - pathbuilder
+    validations:
+      required: true
+  - type: dropdown
     id: module
     attributes:
       label: Module
