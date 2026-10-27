@@ -6,7 +6,7 @@ body:
     id: package
     attributes:
       label: Package
-      description: Is this a Foundry VTT or Pathbuilder bug?
+      description: Is this a Foundry VTT or Pathbuilder feature request?
       options:
         - foundry-vtt
         - pathbuilder
